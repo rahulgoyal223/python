@@ -1,4 +1,5 @@
 # Prime number
+print("Prime numbers in range 1 to 100 are:", end=' ')
 for i in range(1, 101):
     z = 0
     for j in range(2, i):
@@ -6,9 +7,10 @@ for i in range(1, 101):
             z = 1
             break
     if (z == 0):
-        print(i)
+        print(i, end=',')
 
 # runner-up score
+print()
 l = eval(input("Enter list:"))
 l.sort(reverse=True)
 for i in range(1, len(l)):
