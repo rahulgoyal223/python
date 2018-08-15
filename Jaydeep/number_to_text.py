@@ -1,5 +1,8 @@
 #convert number to text eg. 123 => one hundred twenty three
+
+import time
 inputstring = input("enter values : ").strip()
+st = time.time()
 number = int(inputstring)
 divisor = 1000
 output = ''
@@ -73,4 +76,5 @@ while divisor > 0 :
     
         
 print(output.strip())
+print ('method took %.9f ms' % ((time.time() - st)*1000) )
 
